@@ -1,0 +1,347 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    
+    --primary:rgba(40, 36, 52, 0.76);
+    --primary-2:#ffc107;
+    color: white;
+    /* background-color: white; */
+    list-style: none;
+    
+}
+body{
+    background-image:url(./image/abg.jpg)  ;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+.h2{
+    font-weight: 300;
+    margin: 1rem 0;
+    font-size: 1.8rem ;
+}
+
+
+.btn-1{
+    background-color: var(--primary-2) ;
+    padding: .8rem 1.1rem;
+    margin-top: 2rem;
+    border: 0;
+    font-size: .9rem;
+    color: black;
+}
+.btn-2{
+    color: var(--primary-2);
+    border: none;
+    background: none;
+    margin-top: 1rem;
+
+}
+
+/* .container startes here  */
+.main{
+    display: flex;
+    justify-content: space-around;
+}
+
+/* left startes here  */
+.left{
+    width: 20%;
+    min-height: 100vh;
+    position: sticky;
+}
+
+.left .intro-l{
+    width: 100%;
+    background-color: var(--primary);
+    text-align: center;
+    color: white;
+    padding: 1rem 2rem;
+
+}
+.left .intro-l img{
+    width: 40%;
+    background-color: var(--primary);
+    border-radius: 100%;
+    margin: 2rem 2rem .8rem 2rem;
+
+}
+
+.left .intro-l h1{
+    font-size: 1rem;
+}
+.left .intro-l p{
+    font-size: .8rem;
+    margin: .2rem 1rem ;
+}
+
+/* progress-bar STARTED  */
+
+
+.skill-1{
+    width: 100%;
+    margin: 1rem auto;
+    color: white        ;
+}
+.skill-1 .boxs{
+    font-size: 1rem;
+    text-transform: uppercase;
+
+}
+.skill-1 .boxs{
+    background-color: var(--primary);
+    font-size: 1rem;
+    margin: 1rem .5rem;
+    display: inline;
+    padding: .1rem .5rem;
+    border-radius: 10px ;
+    color: var(--primary-2);
+} 
+
+.skill-2{
+    margin: 1rem 0;
+}
+
+.skill-2 span .fas{
+    color: var(--primary-2);
+    margin-right: .5rem;
+}
+
+
+
+
+
+
+/* skills ends here  */
+
+
+/* download starts here  */
+.download{
+    padding: 2rem 0;
+}
+/* download ends here  */
+
+
+/* social starts here  */
+
+.social{
+    width: 100%;
+    background-color: #24242c;
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+.social .fab{
+    margin: 1.5rem auto;
+    font-size: 2rem;
+    align-items: center;
+}
+
+/* social ends here  */
+
+
+
+
+
+/* left finsihed here  */
+/* ----------------------------------------------------------------------------------------- */
+
+/* right startes here  */
+.right{
+    width: 65%;
+}
+
+/* right finsihed here  */
+
+
+/* intro started */
+
+.intro{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 100%;
+    background-color: var(--primary);
+    padding: 2rem 3rem;
+    color: white;
+    font-weight: 100;
+    align-items: center;    
+}
+
+.intro .r-left{
+    width: 90%;
+}
+.intro .r-left h1{
+    font-weight: 200;
+    font-size: 2.5rem;
+}
+.intro .r-left p{
+    font-weight: 200;
+    font-size: 1.2rem;
+}
+
+.intro .img-box{
+    width: 25%;
+    /* height: 9.8rem; */
+    border-radius: 100%;
+    margin: 0 auto;
+    /* background-color: red; */
+}
+
+ 
+.intro .img-box img{
+    width: 100%;
+    border-radius: 100%;
+    
+
+}
+
+/* intro finished */
+/* services started  */
+.services{
+    width: 100%;
+    margin: 0 auto;
+    color: white;
+    font-weight: 100;
+
+}
+
+.services h2{
+
+}
+.services .container{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.services .container .box{
+    background-color: var(--primary);
+    width: 30%;
+    padding: 1.2rem ;
+    margin-bottom: 1.5rem;
+}
+.services .container .box h3 {
+    font-weight: 400;
+    padding: 1rem 0;
+}
+/* services finished  */
+/* my-work started  */
+.my-work{
+    width: 100%; 
+    margin: 2rem auto;
+}
+.my-work h2{
+
+}
+.my-work .slide{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+    /* background-color: blue; */
+
+
+    
+}
+.my-work .slide .card{
+    width: 100%;
+    height: 12.5rem;
+    overflow: hidden;
+    position: relative;
+    
+    /* background-color: brown; */
+}
+.my-work .slide .card .img{
+    width: 100%;
+    height: 12rem;
+    position: absolute;
+}
+
+.my-work .slide .card .img img{
+    width: 100%;
+    height: 100%;
+}
+.my-work .slide .card .content{
+    position: absolute;
+    width: 100%;
+    top: 1px;
+    padding: 1rem 2rem;
+    font-size: 14;
+    background: rgba(255, 255, 255, 0);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    transform: scale(1);
+    color: white;
+    border: 1px solid rgba;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* my-work finshed  */
+
+
+/* testimonials starrted */
+
+/* .testimonials{
+    width: 100%;
+    margin: 0 auto;
+}
+.testimonials .container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+.testimonials .container .box{
+    text-align: center;
+    width: 100%;
+    justify-content: center;
+    background-color: cadetblue;
+}
+.testimonials .container .box .img{
+    background-color: chocolate;
+    width: 100%;
+    align-self: center;
+}
+.testimonials .container .box img{
+    width: 50%;
+    border-radius: 100%;
+} */
+/* testimonials finished */
+
+
+/* footer starts here  */
+footer{
+    width: 100%;
+    height: 10vh;
+    text-align: center;
+}
+footer{
+    width: 100%;
+    height: 10vh;
+}
+/* footer ends here  */
+
+/* -------------------------------------------------------------------------  */
+

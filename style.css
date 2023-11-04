@@ -79,7 +79,7 @@ header .hamburgerMenu span{
     height: 3px;
     background-color: white;
 }
-.active{
+.active .navbars{
     display: block;
     background-color: red;
 }

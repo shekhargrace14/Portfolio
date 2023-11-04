@@ -6,7 +6,7 @@
 
  hamburgerMenu.addEventListener("click", function(){
     hamburgerMenu.style.background ="red";
-    navbar.classList.add("active") ;
+    navbar.classList.toggle("active") ;
 
  })
 

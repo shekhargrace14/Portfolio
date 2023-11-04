@@ -55,18 +55,18 @@ header .logo img{
     width: 100%;
 
 }
-header .navbar ul {
+header #navbar ul {
     /* background-color: aqua; */
     
 }
 
-header .navbar ul li {
+header #navbar ul li {
     margin: 0 1rem;
     padding: .5rem 1rem;
     color: var(--primary-text-color);
     cursor: pointer;
 }
-header .navbar ul li:hover{
+header #navbar ul li:hover{
     background-color: var(--secondary-dark-color);
 }
 header .hamburgerMenu{
@@ -79,9 +79,6 @@ header .hamburgerMenu span{
     height: 3px;
     background-color: white;
 }
-.active .navbars{
-    display: block;
-    background-color: red;
-}
+
 
 /* header ends here  */

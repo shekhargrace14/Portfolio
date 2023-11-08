@@ -1,0 +1,57 @@
+@media screen and (max-width:769px) {
+    /* global css starts here */
+    h1{
+        font-size: 30px;
+        align-items: center !important;
+    }
+    /* global css ends here */
+    header{
+        position: relative;
+    }
+    header .navbar{
+        background-color: var(--secondary-color);
+        width: 50%;
+        height: 100vh;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        transform: translateX(100%);
+        transition: all ease-in-out 600ms;
+    }
+    header .navbar ul{
+        flex-direction: column;
+ 
+        width: 100%;
+        /* background-color: green; */
+        /* height: vh; */
+    }
+    header .navbar ul li{
+        margin: 10px;
+    }
+
+    header #hamburgerMenu{
+        display: block !important;
+        
+    }
+
+    .spanTopRotate{
+        transform: rotate(-45deg) !important;
+        background-color: pink;
+        margin: 5px;
+    }
+    .spanMiddle{
+        display: none;
+    }
+
+    .spanBottom{
+        transform: rotate(45deg) !important;
+        background-color: pink;
+        margin: 5px;
+    }
+    .active{
+        transform: translateX(0) !important;
+    }
+    .hero{
+        flex-direction: column-reverse;
+    }   
+}

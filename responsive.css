@@ -1,35 +1,69 @@
 @media screen and (max-width: 769px){
     body{
         /* background-color:red; */
+        width:100vw !important;  
+        overflow-x: hidden !important;
     }
-    header{
-        position: relative;
-    }
+    
     header #navbar{
-        display: none;
+        display: block; 
         position: absolute;
-        top:5rem;
+        top:100%;
         left: 0;
         width: 100%;
         height: 100vh;
-        background-color: var(--primary-dark-color);
+        height: 100vh;
+        background-color: aqua;
+        transform: translateX(100%);
+        transition: all ease-in-out 600ms;
+    }
+    header .desktopRow{
+        position: relative;
+    }
+    header #mobileRow{
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        /* background-color: var(--primary-dark-color); */
+        /* background-color: green; */
+        /* top:0px; */
+        left:0px;
+        
+        transform: translateX(100%);
+        transition: all ease-in-out 600ms;
+
+
+
+    }
+    .container{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .column1{
+        display: block;
+    }
+    #hamburgerMenu .close-icon{
+        display: none;
+    }
+    .active #hamburgerMenu .close-icon[name="close-outline"]{
+        display: block !important;
+    }
+    .active #hamburgerMenu .menu-icon{
+        display: none;
     }
     header #navbar ul{
-
         flex-direction: column;
         align-items: center;
-        height: 100vh;
-        z-index: 1;
-        
+        height: auto;
+        z-index: 1;       
     }
-    header .hamburgerMenu span{
+    header #hamburgerMenu span{
         display: block;
-
-        z-index: 99;
     }
     .active{
-        display: block !important;
-        background-color: red;
+        transform: translateX(0%) !important;
+        /* background-color: red !important; */
     }
 }
     

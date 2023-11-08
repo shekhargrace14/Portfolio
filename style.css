@@ -17,6 +17,7 @@
 body{
     background-color: var(--primary-dark-color);
     color: var(--primary-text-color);
+    overflow: hidden;
 }
 
 .container{
@@ -35,7 +36,7 @@ body{
     justify-content: space-around;
 }
 p{
-    text-align: justify;
+    text-align: center;
 }
 
 
@@ -69,16 +70,47 @@ header #navbar ul li {
 header #navbar ul li:hover{
     background-color: var(--secondary-dark-color);
 }
-header .hamburgerMenu{
+header #hamburgerMenu{
     /* background-color: aqua;     */
 }
-header .hamburgerMenu span{
+header #hamburgerMenu span{
     display: none;
     margin: .5rem;
     width: 30px;
     height: 3px;
     background-color: white;
+    cursor: pointer;
+    z-index: 99;
+}
+.column1{
+    display: none;
+}
+.mobileRow{
+    display: none; 
+    /* width: 60% !important; */
+    background-color: var(--secondary-text-color);
+    padding: 0 0 0 2rem;
+}
+
+.mobileMenu{
+    /* background-color: red; */
+    
 }
 
 
 /* header ends here  */
+
+/* Footer starts here  */
+footer{
+    position: absolute;
+    bottom: 0;
+    /* background-color: red; */
+    width: 100%;
+
+}
+footer .column {
+    width: 100%;
+    /* background-color: green; */
+    text-align: center;
+}
+/* Footer ends here  */

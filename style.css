@@ -37,7 +37,7 @@ h1{
     
 }
 .column{
-    width: 100%;
+    
 }
 
 .d-flex{
@@ -67,6 +67,8 @@ img{
 
 header{
     background-color: var(--secondary-color);
+    /* width: 100vw;
+    overflow:hidden ; */
 }
 header .row{
     /* background-color: blue; */
@@ -96,8 +98,8 @@ header #hamburgerMenu{
 
 header #hamburgerMenu span{
     display: block;
-    width: 30px;
-    height: 3px;
-    margin: 10px 0;
+    width: 20px;
+    height: 1px;
+    margin: 8px 0;
     background-color: white;
 }

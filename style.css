@@ -64,6 +64,7 @@ img{
 
 /* Global CSS start  */
 
+/* header starts here  */
 
 header{
     background-color: var(--secondary-color);
@@ -103,3 +104,11 @@ header #hamburgerMenu span{
     margin: 8px 0;
     background-color: white;
 }
+
+/* header ends here  */
+
+/* hero starts here */
+.hero .column{
+    width: 50%;
+}
+/* hero ends here */

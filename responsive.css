@@ -4,6 +4,9 @@
         font-size: 30px;
         align-items: center !important;
     }
+    header .logo{
+        align-content: center;
+    }
     header .logo img {
         width: 100%;
     }

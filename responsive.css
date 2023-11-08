@@ -4,13 +4,16 @@
         font-size: 30px;
         align-items: center !important;
     }
+    .row{
+        padding: 30px 15px;
+    }
+    /* global css ends here */
     header .logo{
         align-content: center;
     }
     header .logo img {
         width: 100%;
     }
-    /* global css ends here */
     header{
         position: relative;
     }

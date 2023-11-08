@@ -61,11 +61,8 @@ li{
 img{
     width: 100%;
 }
-
 /* Global CSS start  */
-
 /* header starts here  */
-
 header{
     background-color: var(--secondary-color);
     /* width: 100vw;
@@ -82,7 +79,6 @@ header .logo img{
     width: 50%;
     /* background-color: green; */
 }
-
 header .navbar ul li{
     color: white;
     padding: 10px 20px;
@@ -90,13 +86,9 @@ header .navbar ul li{
 header .navbar ul li:hover{
     background-color: var(--primary-color);
 }
-
 header #hamburgerMenu{
-
     display: none;
-
 }
-
 header #hamburgerMenu span{
     display: block;
     width: 20px;
@@ -104,9 +96,7 @@ header #hamburgerMenu span{
     margin: 8px 0;
     background-color: white;
 }
-
 /* header ends here  */
-
 /* hero starts here */
 .hero .column{
     width: 50%;

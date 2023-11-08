@@ -91,8 +91,8 @@ header #hamburgerMenu{
 }
 header #hamburgerMenu span{
     display: block;
-    width: 20px;
-    height: 1px;
+    width: 35px;
+    height: 2.5px;
     margin: 8px 0;
     background-color: white;
 }
@@ -100,5 +100,6 @@ header #hamburgerMenu span{
 /* hero starts here */
 .hero .column{
     width: 50%;
+    /* background-color: red; */
 }
 /* hero ends here */

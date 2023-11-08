@@ -2,12 +2,18 @@
     /* global css starts here */
     h1{
         font-size: 30px;
-        align-items: center !important;
+        text-align: center !important;
+    }
+    .container{
+        width: 100%;
     }
     .row{
         padding: 30px 15px;
     }
     /* global css ends here */
+    header .row{
+        padding: 5px 15px ;
+    }
     header .logo{
         align-content: center;
     }
@@ -60,7 +66,13 @@
     .active{
         transform: translateX(0) !important;
     }
+    /* hero starts here  */
     .hero{
         flex-direction: column-reverse;
+
     }   
+    .hero .column{
+        width: 100%;
+    }
+    /* hero starts here  */
 }

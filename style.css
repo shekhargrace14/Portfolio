@@ -69,7 +69,13 @@ li{
 img{
     width: 100%;
 }
-/* Global CSS start  */
+
+.spacer{
+    height: 500px;
+    display: block;
+
+}
+/* Global CSS ends  */
 /* header starts here  */
 header{
     background-color: var(--secondary-color);

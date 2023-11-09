@@ -14,3 +14,12 @@ hamburgerMenu.addEventListener("click", function(){
     bottomBar.classList.toggle("bottomBarRotate");
     
 })
+
+let header = document.getElementById("header")
+window.addEventListener('scroll', function(){
+    if(window.pageYOffset > 80){
+        header.classList.add("sticky")
+    }else if(window.pageYOffset < 80){
+        header.classList.remove("sticky")
+    }
+})

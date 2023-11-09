@@ -17,9 +17,9 @@ hamburgerMenu.addEventListener("click", function(){
 
 let header = document.getElementById("header")
 window.addEventListener('scroll', function(){
-    if(window.pageYOffset > 80){
+    if(window.scrollY  > 80){
         header.classList.add("sticky")
-    }else if(window.pageYOffset < 80){
+    }else if(window.scrollY < 80){
         header.classList.remove("sticky")
     }
 })

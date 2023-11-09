@@ -1,7 +1,7 @@
 @media screen and (max-width:769px) {
     /* global css starts here */
     h1{
-        font-size: 30px;
+        /* font-size: 30px; */
         text-align: center !important;
     }
     .container{
@@ -14,10 +14,8 @@
     header .row{
         padding: 5px 15px ;
     }
-    header .logo{
-        align-content: center;
-    }
-    header .logo img {
+    
+    header .img {
         width: 100%;
     }
     header{
@@ -49,30 +47,42 @@
         
     }
 
-    .spanTopRotate{
+    .topBarRotate{
+        transition: all ease-in-out 600ms;
         transform: rotate(-45deg) !important;
         background-color: pink;
-        margin: 5px;
+
     }
-    .spanMiddle{
-        display: none;
+    .middleBarHide{
+        display: none !important;
     }
 
-    .spanBottom{
+    .bottomBarRotate{
+        transition: all  ease-in-out 600ms;
         transform: rotate(45deg) !important;
         background-color: pink;
-        margin: 5px;
+
     }
     .active{
         transform: translateX(0) !important;
     }
     /* hero starts here  */
-    .hero{
+    .hero .row{
         flex-direction: column-reverse;
 
     }   
     .hero .column{
         width: 100%;
+
     }
     /* hero starts here  */
+}
+
+@media screen and (max-width:550px){
+  /* global css starts here */
+    h1{
+        font-size: 30px;
+        text-align: center !important;
+    }
+    /* global css ends here */
 }

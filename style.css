@@ -5,6 +5,7 @@
     --primary-color: #121212;
     --secondary-color: #272727;
     --active-bg-color: #282828cc;
+    --font-family-primary: 'Plus Jakarta Sans', sans-serif;
 }
 
 html{
@@ -27,6 +28,7 @@ h1{
     font-size: 50px;
     font-weight: 400;
     color: white;
+    font-family: var(--font-family-primary);
 }
 .container{
     width: 80%;
@@ -111,6 +113,12 @@ header #hamburgerMenu span{
     height: 2.5px;
     margin: 8px 0;
     background-color: white;
+    transition: all ease-in-out 300ms;
+}
+
+header #hamburgerMenu #middleBar{
+
+  
 }
 /* header ends here  */
 /* hero starts here */

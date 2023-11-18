@@ -66,6 +66,11 @@
     .active{
         transform: translateX(0) !important;
     }
+    .sticky{
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
     /* hero starts here  */
     .hero .row{
         flex-direction: column-reverse;

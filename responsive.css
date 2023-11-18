@@ -15,7 +15,12 @@
         padding: 5px 15px ;
     }
     
-    header .img {
+    header .imgBox{
+
+        width:25% ;
+    }
+
+    header img {
         width: 100%;
     }
     header{
@@ -36,7 +41,7 @@
  
         width: 100%;
         /* background-color: green; */
-        /* height: vh; */
+        /* height: 100vh; */
     }
     header .navbar ul li{
         margin: 10px;
@@ -44,27 +49,38 @@
 
     header #hamburgerMenu{
         display: block !important;
-        
+        position: relative;
     }
 
     .topBarRotate{
         transition: all ease-in-out 600ms;
         transform: rotate(-45deg) !important;
-        background-color: pink;
+        background-color: green !important;
+        margin-top: 50px !important;
+        top: -33px;
+        position: absolute;
 
     }
     .middleBarHide{
-        display: none !important;
+
+        transform: translateX(50px);
+        transition: all  ease-in-out 600ms;
+        opacity: 0;
     }
 
     .bottomBarRotate{
         transition: all  ease-in-out 600ms;
         transform: rotate(45deg) !important;
-        background-color: pink;
+        background-color: red !important;
+        bottom: -11px;
+        position: absolute;
 
     }
     .active{
         transform: translateX(0) !important;
+        
+        
+        
     }
     .sticky{
         position: fixed;

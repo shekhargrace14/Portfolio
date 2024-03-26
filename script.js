@@ -30,3 +30,36 @@ window.addEventListener('scroll', function(){
         header.classList.remove("sticky")
     }
 })
+
+
+// projects starts here 
+let projects = document.querySelector(".projects");
+console.log(projects)
+fetch("./data.json")
+.then(resolve=>resolve.json())
+.then(data=>{
+    console.log(data)
+
+    data.map((element)=>{
+        projects.insertAdjacentHTML("beforeend",`
+        <div class="column ">
+        <div class="image">
+            <iframe src=${element.link} frameborder="0" width="100%"></iframe>       
+        </div>
+        <div class="details">
+            <h3>${element.title}</h3>
+            <p>${element.description}</p>
+            <ul>
+                <li>html</li>
+                <li>css</li>
+                <li>javascript</li>
+                <li>fetch Api</li>
+            </ul>
+            <a href="${element.link}"><button>Watch now</button></a>
+        </div>
+
+    </div>
+        `)
+    })
+})
+// projects ends here 

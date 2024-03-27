@@ -44,9 +44,10 @@ fetch("./data.json")
         projects.insertAdjacentHTML("beforeend",`
         <div class="column ">
         <div class="image">
-            <iframe src=${element.link} frameborder="0" width="100%"></iframe>       
+            <img src=${element.image} alt="">
         </div>
         <div class="details">
+            <h3>${element.id}</h3>
             <h3>${element.title}</h3>
             <p>${element.description}</p>
             <ul>

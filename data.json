@@ -4,21 +4,29 @@
         "title" : "Netflix Clone | Vanila JavaScript | Vanila CSS | HTML | API Fetch",
         "description" : "this is a clone of netfilx  with all the features netfilx holds till data. ",
         "link" : "https://shekhargrace14.github.io/netflixVJS/",
-        "image" : "image/logo.png"
+        "image" : "image/img04.png"
+    },
+    {
+        "id" : "102",
+        "title" : "Netflix Clone | Vanila JavaScript | Vanila CSS | HTML | API Fetch",
+        "description" : "this is a clone of netfilx  with all the features netfilx holds till data. ",
+        "link" : "https://shekhargrace14.github.io/netflixVJS/",
+        "image" : "image/img03.png"
     },
     {
         "id" : "101",
         "title" : "Netflix Clone | Vanila JavaScript | Vanila CSS | HTML | API Fetch",
         "description" : "this is a clone of netfilx  with all the features netfilx holds till data. ",
         "link" : "https://shekhargrace14.github.io/netflixVJS/",
-        "image" : "image/logo.png"
+        "image" : "image/img03.png"
     },
-    
     {
-        "id" : "101",
+        "id" : "102",
         "title" : "Netflix Clone | Vanila JavaScript | Vanila CSS | HTML | API Fetch",
         "description" : "this is a clone of netfilx  with all the features netfilx holds till data. ",
         "link" : "https://shekhargrace14.github.io/netflixVJS/",
-        "image" : "image/logo.png"
+        "image" : "image/img04.png"
     }
+    
+    
 ]

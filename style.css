@@ -14,6 +14,7 @@
 
 html{
     overflow-x: hidden;
+    scroll-behavior: smooth;
 
 }
 
@@ -31,8 +32,8 @@ body{
 }
 
 :root{
-    --primary-color: #e50914;
-    --primary-color-dark: #9f0d14;
+    --primary-color: #0f4c81;
+    --primary-color-dark: #b7c9d9;
     --bg-dark-primary: #000000;
     --bg-dark-secondary: #121212;
     --bg-gray: #171717;
@@ -59,11 +60,12 @@ a{
 } 
 
 button , .button{
-    background-color: white;
+    background-color: var(--primary-color-dark);
     color: black;
     padding: .4rem 1rem;
     border-radius: var(--border-radius);
-    margin-right: 1rem;
+    margin-right: 1rem ;
+    margin-top: 1rem;
     cursor: pointer;
     transition: all ease-in-out 200ms;
     font-size: 1.6rem;
@@ -91,7 +93,7 @@ button , .button{
 
 h1, h2, h3, h4, h5, h6{
     font-family: var(--font-primary);
-    font-weight: 800;
+    font-weight: 600;
     color: var(--text-primary-color);
     margin: .5rem 0;
 }
@@ -106,8 +108,8 @@ h2{
 
 }
 h3{
-    font-size: 2.6rem;
-    line-height: 3.5rem;
+    font-size: 2.2rem;
+    line-height: 3rem;
 
 }
 h4{
@@ -118,7 +120,7 @@ h4{
 p{
     font-size: 1.6rem;
     font-family: var(--font-secondary);
-    line-height: 3.5rem;
+    line-height: 2.5rem;
     color: var(--text-primary-color);
     margin: .5rem 0;   
 }
@@ -168,7 +170,6 @@ ion-icon{
 
 .title{
     text-align: center;
-    padding: 0 0 6%;
 }
 .parent{
     width: 99%;
@@ -232,6 +233,7 @@ header{
     /* width: 100vw;
     overflow:hidden ; */
     background-attachment: fixed;
+    top: 0;
 }
 header .row{
     /* background-color: blue; */
@@ -248,6 +250,7 @@ header .logo img{
 header .navbar ul li{
     color: white;
     padding: 10px 20px;
+    font-size: 1rem;
 }
 header .navbar ul li:hover{
     background-color: var(--primary-color);
@@ -279,7 +282,10 @@ header #hamburgerMenu #bottomBar{
 }
 /* header ends here  */
 /* hero starts here */
+.hero .row{
 
+    padding: 6% 0;
+}
 .hero .column{
     width: 50%;
     /* background-color: red; */
@@ -294,26 +300,33 @@ header #hamburgerMenu #bottomBar{
 .about{
     background-color: var(--secondary-bg-color);
 }
+.about .row{
+    padding: 6%px 0;
 
+}
 .about .column{
     width: 50%;
 
 }
 .about img{
-    width: 60%;
+    width: 70%;
 }
 .about p{
-    font-size: 26px;
+    
 }
 /* about starts here  */
 /* projects starts here  */
 .projects.grid{
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: auto auto auto   ;
     gap: 1.6rem;
     /* background-color: red; */
 
     /* grid-template-columns: column; */
+}
+.projects .row{
+    padding: 6%px 0;
+
 }
 .projects .column{
     /* width: 500px; */
@@ -326,6 +339,11 @@ header #hamburgerMenu #bottomBar{
     /* background-color: gray; */
     padding: 1.6rem;
 }
+.projects .column .details ul li{
+    font-size: 1.6rem;
+
+}
+
 .projects .column .image img{
     width: 100%;
     /* height: 250px; */

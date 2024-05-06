@@ -44,7 +44,9 @@ fetch("./data.json")
         projects.insertAdjacentHTML("beforeend",`
         <div class="column ">
         <div class="image">
-            <img src=${element.image} alt="">
+            <a href="${element.link}" alt="" target="_blank">
+                <img src=${element.image} alt="">
+            </a>
         </div>
         <div class="details">
             <h3>${element.id}</h3>
@@ -56,7 +58,7 @@ fetch("./data.json")
                 <li>javascript</li>
                 <li>fetch Api</li>
             </ul>
-            <a href="${element.link}"><button>Watch now</button></a>
+            <a href="${element.link}" target="_blank"><button>Watch now</button></a>
         </div>
 
     </div>

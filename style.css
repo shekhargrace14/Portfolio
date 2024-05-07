@@ -228,6 +228,7 @@ header{
     overflow:hidden ; */
     position: sticky;
     top: 0;
+    z-index: 3;
 }
 header .row{
     /* background-color: blue; */
@@ -332,6 +333,7 @@ header #hamburgerMenu #bottomBar{
     /* width: 500px; */
     /* background-color: green; */
     position: relative;
+    z-index: 1;
 }
 
 

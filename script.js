@@ -49,16 +49,10 @@ fetch("./data.json")
             </a>
         </div>
         <div class="details">
-            <h3>${element.id}</h3>
-            <h3>${element.title}</h3>
-            <p>${element.description}</p>
-            <ul>
-                <li>html</li>
-                <li>css</li>
-                <li>javascript</li>
-                <li>fetch Api</li>
-            </ul>
-            <a href="${element.link}" target="_blank"><button>Watch now</button></a>
+            
+            <h4>${element.title}</h4>
+        
+
         </div>
 
     </div>

@@ -2,69 +2,56 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    --primary-color: #121212;
-    --secondary-color: #282828cc;
-    --secondary-bg-color: #181818;
-    --active-bg-color: #282828cc;
-    --font-family-primary: 'Plus Jakarta Sans', sans-serif;
-    --font-family-secondary: 'poppins', sans-serif;
-    color: white;
+    
 
 }
 
 html{
     overflow-x: hidden;
+    /* font-size: 10px; */
     scroll-behavior: smooth;
-
 }
 
 body{
-    background-color: var(--primary-color);
+    background-color: var(--bg-dark-primary);       
+    scroll-behavior: smooth;
     overflow-x: hidden;  
     height: 100vh;
-
-}
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-
 }
 
 :root{
-    --primary-color: #0f4c81;
-    --primary-color-dark: #b7c9d9;
-    --bg-dark-primary: #000000;
-    --bg-dark-secondary: #121212;
+    --color-primary: #0f4c81;
+    --color-secondary: #b7c9d9;
+    --color-accent: #072a48;
+
+    --bg-dark-primary: #31333b;
+    --bg-dark-secondary: #3d3e42;
+
     --bg-gray: #171717;
     --bg-gray-hover:#282828;
-    --font-primary: 'Plus Jakarta Sans', sans-serif;
-    --font-secondary: 'poppins', sans-serif;    
+
+    --font-family-primary: 'Plus Jakarta Sans', sans-serif;
+    --font-family-secondary: 'poppins', sans-serif; 
+
     --border-radius: 0.3rem;
-    --text-primary-color: #fff;
-    --text-secondary-color: #737373;
+
+    --text-color-white: #ffffff;
+    --text-color-secondary: #737373;
 }
 
-html{
-    font-size: 10px;
-    scroll-behavior: smooth;
-}
 
-body{
-    background-color: var(--bg-dark-primary);
-}
 
 /* global css starts here  */
 
 a{
     text-decoration: none;
-    font-size: 1.6rem;
+    font-size: 1rem;
     font-family: var(--font-family-secondary);
-    color: var(--text-primary-color);
+    color: var(--text-color-white);
 } 
 
 button , .button{
-    background-color: var(--primary-color-dark);
+    /* background-color: var(--color-primary); */
     color: black;
     padding: .4rem 1rem;
     border-radius: var(--border-radius);
@@ -72,21 +59,21 @@ button , .button{
     margin-top: 1rem;
     cursor: pointer;
     transition: all ease-in-out 200ms;
-    font-size: 1.6rem;
+    font-size: 1rem;
     font-weight: 400;
     border: none;
 }
 
 .btn-primary{
-    background-color: var(--primary-color);
+    background-color: var(--color-primary);
     color: white;
-    border: 1px solid var(--primary-color);
+    border: 1px solid var(--color-primary);
     
 }
 
 .btn-primary:hover{
-    background-color: var(--primary-color-dark);
-    border: 1px solid var(--primary-color-dark);
+    background-color: var(--color-accent);
+    border: 1px solid var(--color-primary);
 
 }
 .btn-secondary{
@@ -96,37 +83,41 @@ button , .button{
 }
 
 h1, h2, h3, h4, h5, h6{
-    font-family: var(--font-primary);
+    font-family: var(--font-family-primary);
     font-weight: 600;
-    color: var(--text-primary-color);
+    color: var(--text-color-white);
     margin: .5rem 0;
 }
 h1{
-    font-size: 4rem;   
-    line-height: 5rem;
+    font-size: 3rem;   
+    line-height: 3.5rem;
 
 }
 h2{
-    font-size: 3rem;
+    font-size: 2rem;
     line-height: 3.5rem;
 
 }
 h3{
-    font-size: 2.2rem;
-    line-height: 3rem;
+    font-size: 1.4rem;
+    line-height: 2.2rem;
 
 }
 h4{
-    font-size: 2.2rem;
-    line-height: 3rem;
+    font-size: 1.2rem;
+    line-height: 2rem;
 
 }
 p{
-    font-size: 1.6rem;
-    font-family: var(--font-secondary);
-    line-height: 2.5rem;
-    color: var(--text-primary-color);
+    font-size: 1rem;
+    font-family: var(--font-family-secondary);
+    line-height: 1.7rem;
+    color: var(--text-color-white);
     margin: .5rem 0;   
+}
+i{
+    color: var(--text-color-white);
+    font-size: 1.4rem;
 }
 
 label{
@@ -140,14 +131,13 @@ input{
 }
 
 li{
-    font-family: var(--font-secondary);
+    font-family: var(--font-family-secondary);
     list-style: none;
-    color: var(--text-secondary-color);
+    color: var(--text-color-white);
+    font-size: 1rem;
 
 }
-a{
-    color: var(--text-secondary-color);
-}
+
 
 ion-icon{
     color: var(--text-primary-color);
@@ -233,7 +223,7 @@ ion-icon{
 /* global css ends here  */
 /* header starts here  */
 header{
-    background-color: var(--bg-dark-primary);
+    background-color: var(--bg-dark-secondary);
     /* width: 100vw;
     overflow:hidden ; */
     position: sticky;
@@ -308,7 +298,7 @@ header #hamburgerMenu #bottomBar{
 
 /* about ends here  */
 .about{
-    background-color: var(--secondary-bg-color);
+    background-color: var(--bg-dark-secondary);
 }
 .about .row{
     padding: 6%px 0;
@@ -341,17 +331,26 @@ header #hamburgerMenu #bottomBar{
 .projects .column{
     /* width: 500px; */
     /* background-color: green; */
+    position: relative;
 }
 
 
 .projects .column .details{
     /* width: 500px; */
-    /* background-color: gray; */
-    padding: 1.6rem;
-}
-.projects .column .details ul li{
-    font-size: 1.6rem;
+    background-color: var(--color-primary);
+    padding: 1rem;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    opacity: 0;
+    transition: all ease-in-out 600ms;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
+}
+.projects .column:hover .details{
+    opacity: 1;
 }
 
 .projects .column .image img{
@@ -372,7 +371,7 @@ header #hamburgerMenu #bottomBar{
 }
 
 #contact i{
-    font-size: 2rem;
+    font-size: 1.3rem;
     margin: 0 1.6rem 0 0;
 }
 /* contact ends here  */

@@ -48,13 +48,11 @@ fetch("./data.json")
                 <img src=${element.image} alt="">
             </a>
         </div>
-        <div class="details">
-            
-            <h4>${element.title}</h4>
-        
-
-        </div>
-
+        <a href="${element.link}" target="_blank">
+            <div class="details">       
+                <h4>${element.title}</h4>        
+            </div>
+        </a>
     </div>
         `)
     })

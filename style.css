@@ -24,8 +24,8 @@ body{
     --color-secondary: #b7c9d9;
     --color-accent: #072a48;
 
-    --bg-dark-primary: #31333b;
-    --bg-dark-secondary: #3d3e42;
+    --bg-dark-primary: #252734;
+    --bg-dark-secondary: #2a2c39;
 
     --bg-gray: #171717;
     --bg-gray-hover:#282828;
@@ -34,9 +34,14 @@ body{
     --font-family-secondary: 'poppins', sans-serif; 
 
     --border-radius: 0.3rem;
+    --border: 1px solid var(--text-color-primary);
 
     --text-color-white: #ffffff;
+    --text-color-primary: #3b3d49;
     --text-color-secondary: #737373;
+
+
+
 }
 
 
@@ -53,7 +58,7 @@ a{
 button , .button{
     /* background-color: var(--color-primary); */
     color: black;
-    padding: .4rem 1rem;
+    padding: 1rem 2rem;
     border-radius: var(--border-radius);
     margin-right: 1rem ;
     margin-top: 1rem;
@@ -65,15 +70,16 @@ button , .button{
 }
 
 .btn-primary{
-    background-color: var(--color-primary);
+    background-color: var(--bg-dark-primary);
     color: white;
-    border: 1px solid var(--color-primary);
+
+    border: var(--border);
     
 }
 
 .btn-primary:hover{
-    background-color: var(--color-accent);
-    border: 1px solid var(--color-primary);
+    background-color: var(--bg-dark-secondary);
+    border: 1px solid var(--text-color-primary);
 
 }
 .btn-secondary{
@@ -292,7 +298,7 @@ header #hamburgerMenu #bottomBar{
     /* background-color: red; */
 }
 .hero .column img{
-    width: 80%;
+    width: 60%;
 }
 
 /* hero ends here */
@@ -310,7 +316,7 @@ header #hamburgerMenu #bottomBar{
 
 }
 .about img{
-    width: 70%;
+    width: 60%;
 }
 .about p{
     
@@ -338,21 +344,26 @@ header #hamburgerMenu #bottomBar{
 
 
 .projects .column .details{
-    /* width: 500px; */
-    background-color: var(--color-primary);
+    width: 100%;
+    background-color: #252734ea;
     padding: 1rem;
     position: absolute;
     top: 0;
     height: 100%;
     opacity: 0;
-    transition: all ease-in-out 600ms;
+    transition: all ease-in-out 400ms;
     display: flex;
     justify-content: center;
     align-items: center;
 
 }
+.projects .column .details h4{
+    text-align: center;
+}
 .projects .column:hover .details{
     opacity: 1;
+    border: var(--border);
+
 }
 
 .projects .column .image img{

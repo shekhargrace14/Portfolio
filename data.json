@@ -1,17 +1,17 @@
 [
     {
         "id" : "101",
-        "title" : "Netflix Clone | Vanila JavaScript | Vanila CSS | HTML | API Fetch",
-        "description" : "this is a clone of netfilx  with all the features netfilx holds till data. ",
-        "link" : "https://shekhargrace14.github.io/netflixVJS/",
-        "image" : "image/img04.png"
+        "title" : "PAX Holidays | Bootstrap | HTML ",
+        "description" : "PAX Holidays is a leading, privately owned Destination Management & Facilitators with associate office in Dubai and India. We offer qualified DMC services to the global meetings and incentive industry all over Dubai including the Abu Dhabi, Sharjah, Ras Al Khaimah, Fujairah, Al Ain and Ajman.",
+        "link" : "https://shekhargrace14.github.io/PAX-Holidays/",
+        "image" : "image/paxholidays.png"
     },
     {
         "id" : "102",
         "title" : "Netflix Clone | Vanila JavaScript | Vanila CSS | HTML | API Fetch",
         "description" : "this is a clone of netfilx  with all the features netfilx holds till data. ",
         "link" : "https://shekhargrace14.github.io/netflixVJS/",
-        "image" : "image/img03.png"
+        "image" : "image/netflixJS.png"
     },
     {
         "id" : "101",

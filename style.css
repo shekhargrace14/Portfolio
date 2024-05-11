@@ -371,10 +371,23 @@ header #hamburgerMenu #bottomBar{
     /* height: 250px; */
 }
 /* projects ends here  */
+/* skills starts here  */
+.skills .main .column {
+    display: grid;
+    grid-template-columns: (3,1fr);
+    
+
+
+    
+}
+/* skills ends here  */
 /* experience starts here  */
 .experience {
     padding: 6% 0;
     background-color: var(--bg-dark-secondary);
+}
+.experience .main .column{
+    width: 50%;
 }
 /* experience ends here  */
 /* contact starts here  */

@@ -372,9 +372,8 @@ header #hamburgerMenu #bottomBar{
 }
 /* projects ends here  */
 /* skills starts here  */
-.skills .main .column {
-    display: grid;
-    grid-template-columns: (3,1fr);
+.skills .main .column img{
+    width: 16%;
     
 
 

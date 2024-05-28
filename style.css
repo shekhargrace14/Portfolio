@@ -248,6 +248,9 @@ header .logo img{
     width: 50%;
     /* background-color: green; */
 }
+header .navbar{
+    /* background-color: black; */
+}
 header .navbar ul li{
     color: white;
     padding: 10px 20px;
@@ -255,7 +258,7 @@ header .navbar ul li{
 }
 
 header .navbar ul li:hover{
-    background-color: var(--primary-color);
+    background-color: var(--bg-gray);
 }
 header .navbar ul li a{
     transition: all 0.5s ease;
@@ -372,8 +375,13 @@ header #hamburgerMenu #bottomBar{
 }
 /* projects ends here  */
 /* skills starts here  */
+.skills .main .column {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: repeat(1fr);
+}
 .skills .main .column img{
-    width: 16%;
+    width: 100%;
     
 
 
@@ -386,16 +394,18 @@ header #hamburgerMenu #bottomBar{
     background-color: var(--bg-dark-secondary);
 }
 .experience .main .column{
-    width: 50%;
+    width: 47%;
 }
-/* experience ends here  */
-/* contact starts here  */
 
-#contact {
+
+/* experience ends here  */
+/* footer starts here  */
+
+footer {
     padding: 6% 0;
 }
 
-#contact i{
+footer i{
     font-size: 1.3rem;
     margin: 0 1.6rem 0 0;
 }

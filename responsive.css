@@ -42,7 +42,7 @@
         position: relative;
     }
     header .navbar{
-        background-color: var(--secondary-color);
+        background-color: var(--bg-dark-primary);
         width: 50%;
         height: 100vh;
         position: absolute;
@@ -112,10 +112,17 @@
     .hero .row{
         flex-direction: column-reverse;
 
+
     }   
     .hero .column{
         width: 100%;
 
+    }
+    .hero .text{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
     }
     /* hero starts here  */
     /* .about starts here  */
@@ -130,6 +137,43 @@
         width: 50%;
     }
     /* .about ends here  */
+    /* projects starts here  */
+    .projects.grid {
+        grid-template-columns: auto auto;
+
+    }
+    /* projects ends here  */
+    /* experience starts here */
+    .experience .main{
+        flex-direction: column;
+    }
+    .experience .main .column{
+        width: 100% ;
+        
+    }
+    /* experience ends here */
+    /* skills starts here  */
+    .skills .main .column {
+        display: grid;
+        grid-auto-flow: column;
+        grid-template-columns: auto auto  ;
+    }
+    .skills .main .column img{
+        width: 100%;
+                
+    }
+/* skills ends here 
+    /* footer starts here  */
+    footer .row{
+        flex-direction: column;
+    }
+    footer .column{
+        /* background-color: red; */
+        width: 100%;
+        margin: 8px 0;
+    }
+    /* footer ends here  */
+
 }
 
 @media screen and (max-width:550px){
@@ -139,4 +183,10 @@
         text-align: center !important;
     }
     /* global css ends here */
+    /* projects starts here  */
+    .projects.grid {
+        grid-template-columns: auto;
+
+    }
+    /* projects ends here  */
 }

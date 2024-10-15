@@ -24,7 +24,7 @@
         width: 100%;
     }
     .row{
-        padding: 30px 15px ;
+        padding: 25px 15px  ;
         /* background-color: rebeccapurple; */
     }
     /* global css ends here */
@@ -44,7 +44,7 @@
         position: relative;
     }
     header .navbar{
-        background-color: var(--bg-dark-primary);
+        background-color: var(--bg-dark-secondary);
         width: 50%;
         height: 100vh;
         position: absolute;

@@ -111,7 +111,7 @@ h2{
 
 h3{
     font-size: 1.4rem;
-    line-height: 2.2rem;
+    line-height: 3rem;
 }
 
 h4{
@@ -241,6 +241,7 @@ header{
     position: sticky;
     top: 0;
     z-index: 3;
+    padding: .4rem 0;
 }
 header .row{
     /* background-color: blue; */
@@ -285,8 +286,8 @@ header #hamburgerMenu{
 }
 header #hamburgerMenu span{
     display: block;
-    width: 35px;
-    height: 2.5px;
+    width: 30px;
+    height: 1.5px;
     margin: 7px 0;
     /* gap: 150px; */
     background-color: white;
@@ -447,6 +448,10 @@ header #hamburgerMenu #bottomBar{
 .experience {
     padding: 5% 0;
     background-color: var(--bg-dark-secondary);
+}
+.experience .main{
+    display: flex;
+    gap:2rem;
 }
 .experience .main .column{
     width: 47%;

@@ -15,7 +15,7 @@
 @media screen and (max-width:769px) {
     /* global css starts here */
     h1{
-        /* font-size: 30px; */
+        /* font-size: 45px; */
         text-align: center !important;
         margin: 2rem 0 0;
     }
@@ -185,7 +185,7 @@
 @media screen and (max-width:550px){
   /* global css starts here */
     h1{
-        font-size: 30px;
+        font-size: 35px;
         text-align: center !important;
     }
     /* global css ends here */

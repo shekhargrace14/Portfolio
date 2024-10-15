@@ -20,12 +20,12 @@ body{
 }
 
 :root{
-    --color-primary: #0f4c81;
+    --color-primary: #00abf0;
     --color-secondary: #b7c9d9;
     --color-accent: #072a48;
 
-    --bg-dark-primary: #252734;
-    --bg-dark-secondary: #2a2c39;
+    --bg-dark-primary: #081b29;
+    --bg-dark-secondary: #040822;
 
     --bg-gray: #171717;
     --bg-gray-hover:#282828;
@@ -58,62 +58,67 @@ a{
 button , .button{
     /* background-color: var(--color-primary); */
     color: black;
-    padding: 1rem 2rem;
+    padding: .8rem 1.6rem;
     border-radius: var(--border-radius);
     margin-right: 1rem ;
     margin-top: 1rem;
     cursor: pointer;
     transition: all ease-in-out 200ms;
     font-size: 1rem;
-    font-weight: 400;
+    font-weight: 500;
     border: none;
+    min-width: 150px;
 }
 
 .btn-primary{
-    background-color: var(--bg-dark-primary);
-    color: white;
-
+    background-color: var(--color-primary);
+    color: var(--bg-dark-primary);
     border: var(--border);
-    
 }
 
 .btn-primary:hover{
-    background-color: var(--bg-dark-secondary);
-    border: 1px solid var(--text-color-primary);
-
+    background-color: transparent;
+    border: 1px solid var(--color-primary);
+    color:var(--color-primary);
 }
 .btn-secondary{
     background-color: transparent;
-    color: white;
-    border: 1px solid white;
+    color: var(--color-primary);
+    border: 1px solid var(--color-primary);
+}
+.btn-secondary:hover{
+    background-color: var(--color-primary);
+    color: var(--bg-dark-primary);
+    border: var(--border);
 }
 
 h1, h2, h3, h4, h5, h6{
     font-family: var(--font-family-primary);
-    font-weight: 600;
+    font-weight: 900;
     color: var(--text-color-white);
-    margin: .5rem 0;
+    margin: 0 0 .5rem 0;
 }
-h1{
-    font-size: 3rem;   
-    line-height: 3.5rem;
 
+h1{
+    font-size: 4rem;   
+    line-height: 3.5rem;
 }
+
 h2{
     font-size: 2rem;
     line-height: 3.5rem;
-
 }
+
 h3{
     font-size: 1.4rem;
     line-height: 2.2rem;
-
 }
+
 h4{
     font-size: 1.2rem;
     line-height: 2rem;
-
 }
+
 p{
     font-size: 1rem;
     font-family: var(--font-family-secondary);
@@ -121,6 +126,7 @@ p{
     color: var(--text-color-white);
     margin: .5rem 0;   
 }
+
 i{
     color: var(--text-color-white);
     font-size: 1.4rem;
@@ -241,9 +247,15 @@ header .row{
     padding: 1% 0;
 }
 header .logo{
-    width: 10%;
+    width: 50%;
     /* background-color: red; */
+    color:white;
+    font-size: 2rem;
+    font-family: var(--font-family-primary);
+    font-weight: 600;
+    color: var(--text-color-white);
 }
+
 header .logo img{
     width: 50%;
     /* background-color: green; */
@@ -258,7 +270,8 @@ header .navbar ul li{
 }
 
 header .navbar ul li:hover{
-    background-color: var(--bg-gray);
+    /* background-color: var(--bg-gray); */
+    color: #00abf0;
 }
 header .navbar ul li a{
     transition: all 0.5s ease;
@@ -268,15 +281,13 @@ header .navbar ul li a{
 header #hamburgerMenu{
     width: 50px;
     height: 30px;
-    display: none;
-
-    
+    display: none;    
 }
 header #hamburgerMenu span{
     display: block;
     width: 35px;
     height: 2.5px;
-    margin: 8px 0;
+    margin: 7px 0;
     /* gap: 150px; */
     background-color: white;
     transition: all ease-in-out 300ms;
@@ -292,13 +303,45 @@ header #hamburgerMenu #bottomBar{
 }
 /* header ends here  */
 /* hero starts here */
-.hero .row{
-
-    padding: 6% 0;
+.hero{
+    min-height: 95vh;
+    padding: 2% 0;
+}
+.hero .row{ 
+    /* padding: 6% 0; */
 }
 .hero .column{
     width: 50%;
-    /* background-color: red; */
+}
+.hero .text{
+    /* background-color: green; */
+}
+.hero .text .subTitle {
+    color:#00abf0;
+    font-family: var(--font-family-primary);
+    font-weight: 600;
+    color: var(--color-primary);
+    margin: .7rem 0 2rem 0;
+    font-size: 1.5rem;
+}
+.hero .social{
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    gap: 1.5rem;
+    margin-top: 5rem;
+}
+.hero .social i{
+    color: var(--color-primary);
+    border: 2px solid #00abf0;
+    padding: .7rem;
+    border-radius: 100%;
+}
+.hero .social i:hover{
+    background-color: var(--color-primary);
+    color: var(--bg-dark-primary);
+    border: 2px solid var(--color-primary);
+
 }
 .hero .column img{
     width: 60%;
@@ -380,17 +423,29 @@ header #hamburgerMenu #bottomBar{
     grid-auto-flow: column;
     grid-template-columns: repeat(1fr);
 }
+
+.skills .main {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    /* background-color: yellow; */
+
+}
+.skills .main .column{
+    /* background-color: red; */
+    width: 24%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
 .skills .main .column img{
-    width: 100%;
-    
-
-
-    
+    width: 50%;
 }
 /* skills ends here  */
 /* experience starts here  */
 .experience {
-    padding: 6% 0;
+    padding: 5% 0;
     background-color: var(--bg-dark-secondary);
 }
 .experience .main .column{
@@ -402,7 +457,10 @@ header #hamburgerMenu #bottomBar{
 /* footer starts here  */
 
 footer {
-    padding: 6% 0;
+    padding: 2% 0 2%;
+    background-color: var(--bg-dark-secondary);
+
+    
 }
 
 footer i{

@@ -22,9 +22,13 @@
     <header id="header padding">
         <div class="container">
             <div class="row d-flex justify-between align-center">
-                <div class="column imgBox logo">
-                    <a href="./index.html"><img src="./image/logo.png" alt="logo"></a>
+                <!-- <div class="column imgBox logo"> -->
+                    <!-- <a href="./index.html"><img src="./image/logo.png" alt="logo"></a> -->
+                <!-- </div> -->
+                <div class="column logo">
+                    Shekhar.
                 </div>
+
                 <div class="column navbar " id="navbar">
                     <ul class="d-flex justify-content-between">
                         <a href="#hero"> <li> Home </li> </a>
@@ -35,10 +39,12 @@
                         <a href="#contact"> <li> Contact</li> </a>
                     </ul>
                 </div>
-                <div class="column" id="hamburgerMenu">
-                    <span id="topBar"></span>
-                    <span id="middleBar"></span>
-                    <span id="bottomBar"></span>
+                <div class="column" >
+                    <div id="hamburgerMenu">
+                        <span id="topBar"></span>
+                        <span id="middleBar"></span>
+                        <span id="bottomBar"></span>
+                    </div>
                 </div>
             </div>
 
@@ -47,13 +53,33 @@
     <!-- header ends here  -->
     <!-- hero starts here  -->
 
-    <section class="container hero" id="hero">
-        <div class=" row d-flex align-center">
+    <section class="container hero d-flex align-center " id="hero">
+        <div class=" row d-flex align-center ">
             <div class="column text">
-                <h1>I am Shekhar <br> Web Developer</h1>
-                <a href="https://github.com/shekhargrace14" target="_blank">
-                    <button class="btn-primary">Github Profile</button>
-                </a>
+                <div>
+                    <h1>Hi, I am Shekhar </h1>
+                    <p class="subTitle">Frontend Developer</p>
+                    <p>Hi, I'm Shekhar, a Frontend Developer passionate about building dynamic, user-friendly websites. I work with HTML, CSS, and JavaScript to create engaging web applications. My projects meet web accessibility standards for clients worldwide</p>
+                    <a href="https://github.com/shekhargrace14" target="_blank">
+                        <button class="btn-primary">Github Profile</button>
+                    </a>
+                    <a href="./Assets/Chander_Shekhar_UI_React.js_Developer.pdf" download="Chander_Shekhar_UI_React.js_Developer.pdf">
+                        <button class="btn-secondary">Resume</button>
+                    </a>
+                </div>
+                <div class="social">
+                    <a href="https://github.com/shekhargrace14" target="_blank">
+                        <i class="fa-brands fa-github"></i> 
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/chander-shekhar-994528221/" target="_blank">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                    <a href="mailto:shekhargrace14@gmail.com" target="_blank" aria-label="Send an email">
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
+
+                </div>
             </div>
             <div class="column imgBox d-flex justify-center align-center">
                 <img src="./image/hero-ai.svg" alt="">
@@ -76,7 +102,7 @@
                 </div>
                 <div class="column">
                     <h2>About Me</h2>
-                    <p>I am Chander Shekhar, a dedicated Frontend Web Developer with a strong passion for creating dynamic and user-friendly web applications. Currently, I am honing my skills at Adaan Digital Solutions, where I design websites for international clients using HTML, CSS, and JavaScript, while ensuring web accessibility standards. Previously, as a freelancer, I successfully developed numerous websites, including Shalom Worship, which attracts significant monthly traffic. My projects, such as an e-commerce store and a Netflix clone, demonstrate my expertise in DOM manipulation, LocalStorage, and Fetch API. I possess a robust skill set in HTML5, CSS3, JavaScript, and basic React.js, complemented by experience with Tailwind CSS, Bootstrap, SASS, Wix, and WordPress. My educational background includes 10+2 from CBSE, Delhi, and a BA from IGNOU, Delhi. I am always eager to take on new challenges and bring innovative web solutions to life.</p>
+                    <p> Previously, as a freelancer, I successfully developed numerous websites, including Shalom Worship, which attracts significant monthly traffic. My projects, such as an e-commerce store and a Netflix clone, demonstrate my expertise in DOM manipulation, LocalStorage, and Fetch API. I possess a robust skill set in HTML5, CSS3, JavaScript, and basic React.js, complemented by experience with Tailwind CSS, Bootstrap, SASS, Wix, and WordPress. My educational background includes 10+2 from CBSE, Delhi, and a BA from IGNOU, Delhi. I am always eager to take on new challenges and bring innovative web solutions to life.</p>
                     <a href="./Assets/Chander_Shekhar_Frontend_Web_React.js_Developer.pdf" download="Chander_Shekhar_Frontend_Web_React.js_Developer.pdf">
                         <button class="btn-primary">Download Resume</button>
                     </a>
@@ -147,13 +173,31 @@
                 </div>
             </div>
             <div class="row main">
-                <div class="column  ">
+                <div class="column ">
                     <img src="./image/skills-(4).png" alt="">
+                </div>
+                <div class="column ">
                     <img src="./image/skills-(3).png" alt="">
+                </div>
+                <div class="column ">
                     <img src="./image/skills-(5).png" alt="">
+                </div>
+                <div class="column ">
                     <img src="./image/skills-(7).png" alt="">
+                </div>
+                
+                <div class="column ">
+                    <img src="./image/skills-(2).png" alt="">
+                </div>
+                
+                <div class="column ">
                     <img src="./image/skills-(6).png" alt="">
+                </div>
+                
+                <div class="column ">                    
                     <img src="./image/skills-(1).png" alt="">
+                </div>
+                <div class="column ">
                     <img src="./image/skills-(8).png" alt="">
                 </div>
             </div>
@@ -162,7 +206,8 @@
     <!-- skills ends here  -->
 
     <!-- contact starts here  -->
-    <footer class="container" id="contact">
+    <footer id="contact">
+        <div class="container" >
         <div class="row d-flex justify-between align-center">
             <div class="column">
                 <div class="d-flex align-center">
@@ -191,11 +236,12 @@
                 
             </div>
         </div>
+    </div>
     </footer >
     <!-- contact ends here  -->
-    <section><span class="spacer"></span></section>
-    <section><span class="spacer"></span></section>
-    <section><span class="spacer"></span></section>
+    <!-- <section><span class="spacer"></span></section> -->
+    <!-- <section><span class="spacer"></span></section> -->
+    <!-- <section><span class="spacer"></span></section> -->
 
     
 

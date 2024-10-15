@@ -6,7 +6,7 @@ let bottomBar = document.getElementById("bottomBar")
 
 
 hamburgerMenu.addEventListener("click", function(){
-    console.log("ham is a burger menu");
+    // console.log("ham is a burger menu");
     navbar.classList.toggle("active");
     // hamburgerMenu.style.backgroundColor="red";
     topBar.classList.toggle("topBarRotate");

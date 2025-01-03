@@ -195,4 +195,15 @@
 
     }
     /* projects ends here  */
+    /* skills starts here  */
+    .skills .main .column{
+        /* background-color: red; */
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    /* skills ends here  */
+
 }
